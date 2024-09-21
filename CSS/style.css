@@ -2,10 +2,18 @@ body {
     background-color: #343333;
 }
 
+header h1{
+    text-align: center;
+    background-color: rgb(9, 217, 9);
+    font-size: 2.5em;
+
+}
+
 main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .row {
@@ -20,8 +28,45 @@ main {
     margin: 1px;
 }
 
-.nextPiece {
+#data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#data #top,
+#data #bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+#data #top div,
+#data #bottom div {
+    font-family: Arial, Helvetica, sans-serif;
     width: 250px;
-    height: 250px;
+    height: 200px;
     border: 5px dashed white;
+    margin: 1em 0 1em 0;
+}
+
+#data #play {
+    width: 510px;
+    height: 80px;
+    border: 5px dashed white;
+}
+
+#data p{
+    margin: 0;
+    padding: 0.5em;
+    border-bottom: 5px dashed white ;
+}
+
+#data p,
+#play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: green;
 }
